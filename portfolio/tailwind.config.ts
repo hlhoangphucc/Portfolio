@@ -21,7 +21,7 @@ const config = {
       xl: '1280px',
     },
     fontFamily: {
-      primary: 'var (--font-jetbrainsMono),',
+      primary: 'var(--font-jetbrainsMono)',
     },
     extend: {
       colors: {
