@@ -14,7 +14,7 @@ const stairAnimation = {
   },
 };
 
-const reverseIndex = (index) => {
+const reverseIndex = ({ index }: { index: number }) => {
   const totalSteps = 6;
   return totalSteps - index - 1;
 };
@@ -33,7 +33,7 @@ const Stairs = () => {
             transition={{
               duration: 0.4,
               ease: 'easeInOut',
-              delay: reverseIndex(index) * 0.1,
+              delay: reverseIndex({ index }) * 0.1,
             }}
             className='h-full w-full bg-white relative'
           />
